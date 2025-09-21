@@ -1,4 +1,4 @@
-/* ---- base ---- */
+/* --------- base --------- */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
 :root{
   --red:#d71920;
@@ -11,7 +11,7 @@
 html,body{margin:0;padding:0}
 body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);}
 
-/* ---- top nav (sticky, clean) ---- */
+/* --------- top nav --------- */
 .nav{
   position:sticky; top:0; z-index:50;
   background:var(--red); color:#fff;
@@ -22,44 +22,36 @@ body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
 .nav a{color:#fff;text-decoration:none;margin-left:14px;font-size:14px;opacity:.95}
 .nav a:hover{opacity:1;text-decoration:underline}
 
-/* ---- hero slider ---- */
-.hero{
-  position:relative; height:min(78vh,760px); overflow:hidden; color:#fff;
-}
-.slide{
-  position:absolute; inset:0;
-  background-position:center; background-size:cover;
-  opacity:0; transition:opacity 900ms ease-in-out;
-}
+/* --------- hero slider --------- */
+.hero{position:relative; height:min(78vh,760px); overflow:hidden; color:#fff}
+.slide{position:absolute; inset:0; background-position:center; background-size:cover; opacity:0; transition:opacity 900ms ease-in-out}
 .slide.active{opacity:1}
-.hero::after{
-  /* gradient overlay for readability */
-  content:""; position:absolute; inset:0;
-  background:linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.55));
-}
-.hero .inner{
-  position:relative; z-index:2; height:100%;
-  display:flex; align-items:flex-end;
-  padding:56px 16px;
-}
+.hero::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.55))}
+.hero .inner{position:relative; z-index:2; height:100%; display:flex; align-items:flex-end; padding:56px 16px}
 .wrap{max-width:1100px;margin:0 auto;width:100%}
 .h1{font-size:clamp(28px,5vw,56px);line-height:1.05;margin:0 0 8px;font-weight:800}
 .sub{font-size:clamp(14px,2.2vw,18px);opacity:.9;margin:0 0 18px}
 .ctas{display:flex;gap:12px;flex-wrap:wrap}
-.btn{
-  display:inline-block; padding:12px 16px; border-radius:8px;
-  font-weight:600; text-decoration:none;
-}
+.btn{display:inline-block; padding:12px 16px; border-radius:8px; font-weight:600; text-decoration:none}
 .btn.primary{background:#fff;color:var(--red)}
 .btn.ghost{border:1.5px solid #fff;color:#fff}
 
-/* ---- content cards + reveal animation ---- */
-.main{max-width:1100px;margin:28px auto;padding:0 16px;display:grid;gap:16px}
-.card{border:1px solid #eee;border-radius:10px;padding:16px;transition:transform .2s ease, box-shadow .2s ease;background:#fff}
-.card:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.06)}
-.reveal{opacity:0; transform:translateY(14px); transition:opacity .6s ease, transform .6s ease;}
-.reveal.show{opacity:1; transform:none}
+/* --------- sections / grids --------- */
+.section{max-width:1100px;margin:36px auto;padding:0 16px}
+.h2{font-size:clamp(22px,3.2vw,28px);margin:0 0 10px;font-weight:800}
+.p{color:#444;margin:0}
+.grid{display:grid;gap:16px}
+.grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:800px){.grid-2{grid-template-columns:1fr}}
 
-/* ---- footer ---- */
-.footer{border-top:1px solid #eee;color:var(--muted);padding:16px}
-.footer .row{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.video{position:relative;padding-top:56.25%;border-radius:12px;overflow:hidden;border:1px solid #eee;background:#000}
+.video iframe{position:absolute;inset:0;width:100%;height:100%}
+
+.news{display:grid;gap:12px}
+.news-item{border:1px solid #eee;border-radius:10px;padding:14px;background:#fff}
+.news-item small{color:#666}
+
+/* stats tiles */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+@media (min-width:720px){.stats{grid-template-columns:repeat(4,1fr)}}
+@media (min-wid
