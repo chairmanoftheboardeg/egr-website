@@ -4,21 +4,62 @@
   <meta charset="utf-8">
   <title>Emirates Group Roblox</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;margin:0}
-    header{background:#d71920;color:#fff;padding:16px}
-    main{max-width:960px;margin:24px auto;padding:0 16px}
-    a.btn{display:inline-block;background:#000;color:#fff;padding:10px 14px;border-radius:6px;text-decoration:none}
-  </style>
+  <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <header>
-    <h1>Emirates Group Roblox</h1>
-    <p>Reform 2025 — Reborn. Reimagined. Ready to Fly.</p>
-  </header>
-  <main>
-    <p>This is a starter page. We’ll add Flights, Careers, and Staff Login next.</p>
-    <p><a class="btn" href="#">Coming soon: Flights Board</a></p>
+  <!-- top nav -->
+  <div class="nav">
+    <div class="brand">Emirates Group Roblox</div>
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="/corporate.html">Corporate</a>
+      <a href="/careers.html">Careers</a>
+      <a href="/support/index.html">Support Centre</a>
+      <a href="/media.html">Media</a>
+    </nav>
+  </div>
+
+  <!-- hero with cross-fading background images -->
+  <section class="hero">
+    <!-- slides are injected by JS -->
+    <div class="inner">
+      <div class="wrap">
+        <h1 class="h1 reveal">Hello Tomorrow. Fly Better.</h1>
+        <p class="sub reveal">Emirates Group Roblox — Reform 2025: Reborn. Reimagined. Ready to Fly.</p>
+        <div class="ctas reveal">
+          <a class="btn primary" href="/careers.html">Apply for Staff</a>
+          <a class="btn ghost" href="/support/index.html">Support Centre</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- feature cards (like their tiles) -->
+  <main class="main">
+    <a class="card reveal" href="/corporate.html">
+      <b>Corporate</b><br><span style="color:#555">Who we are · Leadership · Departments</span>
+    </a>
+    <a class="card reveal" href="/careers.html">
+      <b>Careers</b><br><span style="color:#555">Open positions · How to apply</span>
+    </a>
+    <a class="card reveal" href="/media.html">
+      <b>Media</b><br><span style="color:#555">News · Announcements</span>
+    </a>
+    <a class="card reveal" href="/support/index.html">
+      <b>Support Centre</b><br><span style="color:#555">FAQs · Guides</span>
+    </a>
   </main>
+
+  <footer class="footer">
+    <div class="row">
+      <div>© 2025 Emirates Group Roblox</div>
+      <div style="display:flex;gap:12px">
+        <a href="/privacy.pdf">Privacy Policy</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js" defer></script>
 </body>
 </html>
