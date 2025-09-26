@@ -100,3 +100,23 @@ body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
 /* size the footer icons even if the .icon class didn’t load */
 .partner-footer svg{width:22px !important; height:22px !important; display:block}
 
+/* === Subsidiaries spacing + full-width === */
+.band-dark{padding-left:24px;padding-right:24px}
+
+.subs-tiles{
+  max-width:1280px;                 /* was 1100 */
+  gap:24px;                         /* more space between cards */
+  grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); /* fill the row nicely */
+}
+
+/* keep cards tidy */
+.partner-card{min-height:280px}
+.logo-wrap{width:104px;height:104px}
+.logo-wrap img{width:84px;height:84px;object-fit:contain;display:block}
+
+/* fallback “E” tile if a logo fails */
+.logo-fallback{
+  width:84px;height:84px;display:grid;place-items:center;
+  font-weight:800;font-size:34px;color:#fff;border-radius:16px;
+  background:linear-gradient(180deg,rgba(255,255,255,.18),rgba(255,255,255,.06));
+}
