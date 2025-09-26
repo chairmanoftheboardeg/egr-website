@@ -84,3 +84,19 @@ body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
 @media (max-width:980px){.subs-tiles{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (max-width:720px){.subs-tiles{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:460px){
+
+/* --- hotfix: force sizes for logos & icons in Subsidiaries --- */
+.subs-tiles{grid-template-columns:repeat(4,minmax(0,1fr)) !important}
+@media (max-width:980px){.subs-tiles{grid-template-columns:repeat(3,minmax(0,1fr)) !important}}
+@media (max-width:720px){.subs-tiles{grid-template-columns:repeat(2,minmax(0,1fr)) !important}}
+@media (max-width:460px){.subs-tiles{grid-template-columns:1fr !important}}
+
+.partner-card{min-height:260px}
+.partner-card .logo-wrap{width:84px;height:84px}
+.partner-card .logo-wrap img{
+  width:64px !important; height:64px !important;
+  object-fit:contain !important; display:block
+}
+/* size the footer icons even if the .icon class didn’t load */
+.partner-footer svg{width:22px !important; height:22px !important; display:block}
+
