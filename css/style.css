@@ -120,3 +120,31 @@ body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
   font-weight:800;font-size:34px;color:#fff;border-radius:16px;
   background:linear-gradient(180deg,rgba(255,255,255,.18),rgba(255,255,255,.06));
 }
+/* === Subsidiaries: full-width + gutters + bigger gaps === */
+.band-dark{
+  /* full-bleed band with safe side gutters */
+  padding-top:44px; padding-bottom:44px;
+  padding-left:clamp(16px,6vw,64px);
+  padding-right:clamp(16px,6vw,64px);
+}
+
+/* make the heading row full width (override any inline max-width) */
+.band-dark #subsidiaries.section{
+  max-width:none !important;
+  padding:0 !important;
+  margin:0 0 16px 0 !important;
+}
+
+/* grid spans the whole page width and breathes */
+.subs-tiles{
+  max-width:none !important; width:100%;
+  padding:0 !important;
+  display:grid;
+  gap:clamp(18px,2.2vw,32px);                 /* bigger gaps between cards */
+  grid-template-columns:repeat(auto-fit, minmax(260px,1fr)); /* fill the row nicely */
+}
+
+/* keep card/logo sizes tidy */
+.partner-card{min-height:280px}
+.logo-wrap{width:100px;height:100px}
+.logo-wrap img{width:80px;height:80px;object-fit:contain;display:block}
