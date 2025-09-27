@@ -5,57 +5,42 @@
   <title>Emirates Group Roblox</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Emirates Group Roblox — Hello Tomorrow. Fly Better. Reform 2025">
-  <link rel="stylesheet" href="/css/style.css?v=7">
-
-  <!-- Inline component CSS to GUARANTEE the card style applies -->
-  <style>
-    /* dark band like the reference */
-    .band-dark{width:100%;background:radial-gradient(1200px 600px at 50% -100px,#0f1b2e 10%,#0b1220 60%,#0a1020 100%);padding:44px 0;color:#dfe6ff}
-    .band-dark .h2{color:#fff;margin:0 0 16px}
-
-    /* 5 across on wide screens, then 4/3/2/1 responsively */
-    .subs-tiles{max-width:1100px;margin:0 auto;padding:0 16px;display:grid;gap:18px;grid-template-columns:repeat(4,minmax(0,1fr))}
-    @media (min-width:1280px){.subs-tiles{grid-template-columns:repeat(5,minmax(0,1fr))}}
-    @media (max-width:980px){.subs-tiles{grid-template-columns:repeat(3,minmax(0,1fr))}}
-    @media (max-width:720px){.subs-tiles{grid-template-columns:repeat(2,minmax(0,1fr))}}
-    @media (max-width:460px){.subs-tiles{grid-template-columns:1fr}}
-
-    /* card */
-    .partner-card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;min-height:270px;box-shadow:0 10px 30px rgba(0,0,0,.25);transition:transform .18s,box-shadow .18s,background .18s}
-    .partner-card:hover{transform:translateY(-3px);background:rgba(255,255,255,.06);box-shadow:0 16px 40px rgba(0,0,0,.35)}
-    .partner-body{padding:22px 20px;text-align:center}
-    .logo-wrap{width:104px;height:104px;margin:0 auto 14px;border-radius:24px;display:grid;place-items:center;background:linear-gradient(180deg,rgba(255,255,255,.12),rgba(255,255,255,.05))}
-    .logo-wrap img{width:84px;height:84px;object-fit:contain;border-radius:16px;display:block}
-    .partner-title{margin:10px 0 6px;font-weight:800;font-size:19px;color:#fff}
-    .partner-sub{margin:0;color:rgba(235,240,255,.85);line-height:1.45}
-
-    /* footer with circular icon buttons */
-    .partner-footer{display:flex;gap:12px;align-items:center;justify-content:center;padding:12px 14px;border-top:1px solid rgba(255,255,255,.08);background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.03))}
-    .icon-btn{width:42px;height:42px;border-radius:999px;display:grid;place-items:center;text-decoration:none !important;color:#cbd6ff;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);transition:transform .15s,background .15s,color .15s}
-    .icon-btn:hover{transform:translateY(-2px);background:rgba(255,255,255,.16);color:#fff}
-    .icon{width:22px;height:22px;display:block}
-  </style>
+  <link rel="stylesheet" href="/css/style.css?v=20">
 </head>
 <body>
+
   <!-- NAV -->
   <div class="nav">
     <div class="brand">Emirates Group Roblox</div>
-    <nav>
+    <div class="nav-right">
       <a href="/index.html">Home</a>
-      <a href="/corporate.html">Corporate</a>
+      <a href="/about.html">About Us</a>
+      <a href="/leadership.html">Our Leadership</a>
       <a href="/careers.html">Careers</a>
+      <a href="/more.html">More</a>
       <a href="/support/index.html">Support Centre</a>
       <a href="/media.html">Media</a>
-    </nav>
+      <div class="drop" tabindex="0">
+        <button type="button">Social Links ▾</button>
+        <div class="menu">
+          <a href="https://www.instagram.com/emiratesgroup.rbx" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://x.com/FlyEmiratesRBX" target="_blank" rel="noopener">Twitter (X)</a>
+          <a href="https://youtube.com/@emirates-group-roblox" target="_blank" rel="noopener">YouTube</a>
+          <a href="https://www.linkedin.com/company/emirates-group-roblox" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://www.tiktok.com/@emiratesgroup.rbx" target="_blank" rel="noopener">TikTok</a>
+          <a href="https://www.roblox.com/groups/" target="_blank" rel="noopener">Roblox Group</a>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- HERO -->
   <section class="hero">
-    <div class="inner">
-      <div class="wrap">
-        <h1 class="h1 reveal">Hello Tomorrow. Fly Better.</h1>
-        <p class="sub reveal">Emirates Group Roblox — Reform 2025: Reborn. Reimagined. Ready to Fly.</p>
-        <div class="ctas reveal">
+    <div class="wrap">
+      <div>
+        <h1 class="h1">Hello Tomorrow. Fly Better.</h1>
+        <p class="sub">Emirates Group Roblox — Reform 2025: Reborn. Reimagined. Ready to Fly.</p>
+        <div class="ctas">
           <a class="btn primary" href="/careers.html">Apply for Staff</a>
           <a class="btn ghost" href="/support/index.html">Support Centre</a>
         </div>
@@ -64,71 +49,123 @@
   </section>
 
   <!-- WELCOME -->
-  <section class="section reveal">
-    <h2 class="h2">Welcome</h2>
-    <p class="p">
-      Your gateway to the world of Emirates Group Roblox — where aviation passion meets virtual innovation. Here, you can explore our subsidiaries, learn about upcoming projects, connect with our community, and discover opportunities to join our team. Whether you’re here to fly, train, innovate, or simply learn more about what we do, this site is your starting point for all things Emirates Group Roblox.
-    </p>
+  <section class="section">
+    <div class="lede">
+      <h2 class="h2">Welcome</h2>
+      <p class="p">
+        Welcome to <b>Emirates Group Roblox (EGR)</b> — the hub where aviation passion meets virtual innovation.
+        Across our airlines, university and partner teams, we build reliable, high-quality experiences that are easy to
+        join and fun to return to. On this site you can explore our subsidiaries, follow the latest news, and apply to
+        work with us. Whether you want to fly sophisticated routes, learn real procedures, produce assets, or help
+        organize large events, EGR provides the structure, tools and community to make it happen. Our promise is to
+        operate with professional standards, transparent governance and a safe, respectful environment for all members
+        and visitors.
+      </p>
+    </div>
   </section>
 
-  <!-- VIDEO + NEWS -->
-  <section class="section grid grid-2">
-    <div class="reveal">
-      <h2 class="h2">Our Latest YouTube Video</h2>
+  <!-- LATEST VIDEO -->
+  <section class="section">
+    <h2 class="h2">Our Latest YouTube Video</h2>
+    <div class="video-wrap">
       <div class="video">
         <iframe src="https://www.youtube.com/embed/wBkx7YEi4nA" title="Latest video" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
       </div>
-      <p class="p" style="margin-top:10px">
-        Don’t miss out — watch now and subscribe to our YouTube channel for more updates, events, and exclusive content!
-      </p>
     </div>
+    <p class="channel-note">
+      Watch more on our <a href="https://youtube.com/@emirates-group-roblox" target="_blank" rel="noopener">YouTube channel</a> — subscribe to catch events, updates, and behind-the-scenes content.
+    </p>
+  </section>
 
-    <div class="reveal">
-      <h2 class="h2">Latest News</h2>
-      <div class="news">
-        <a class="news-item" href="/media.html#flydubai-joins">
-          <b>Fly Dubai Joins Emirates Group Roblox as Official Subsidiary</b><br>
-          <small>August 14, 2025 · Announcement</small>
-        </a>
-      </div>
+  <!-- NEWS -->
+  <section class="section">
+    <h2 class="h2">Latest News</h2>
+    <div class="news-list">
+      <article class="card" id="flydubai-joins">
+        <h3>Fly Dubai Joins Emirates Group Roblox as Official Subsidiary</h3>
+        <div class="meta">Strategic agreement strengthens EGR with the addition of the Fly Dubai Division. · August 14, 2025 · From the Office of the Chairman Of The Board, Tyler Nicholas</div>
+        <details>
+          <summary>Read the full announcement</summary>
+          <div class="p" style="margin-top:8px">
+            Emirates Group Roblox is proud to officially announce that Fly Dubai has joined our organization as an official subsidiary under a new affiliation and subsidiary agreement. This partnership marks a significant step in strengthening our group’s operational capabilities and expanding our presence within the Roblox aviation community.
+            <br><br>
+            Under the terms of the agreement, Fly Dubai will join Emirates Group Roblox as our Fly Dubai Division, operating as a recognized subsidiary while continuing to function with its own distinct identity, brand, and internal operations. The division will remain under the leadership of Chairwoman Ash, ensuring continuity in management and preserving the culture and values that have made Fly Dubai a respected name in the community.
+            <br><br>
+            This collaboration is designed to enhance cooperation between our airlines, improve operational efficiency, and provide our members and passengers with more diverse and high-quality aviation roleplay experiences. By bringing together the resources and expertise of both organizations, we aim to set new standards in the Roblox aviation sector and deliver even greater value to our community.
+            <br><br>
+            We extend our warmest welcome to the Fly Dubai team and look forward to the exciting opportunities this partnership will bring. This marks the beginning of a new chapter for Emirates Group Roblox and Fly Dubai, united in our shared vision of innovation, professionalism, and excellence in Roblox aviation.
+          </div>
+        </details>
+      </article>
     </div>
   </section>
 
-  <!-- STATS BOARD -->
-  <section class="section reveal">
-    <div class="board">
-      <div class="board-head">
-        <h2 class="h2" style="margin:0">Group Statistics</h2>
-        <small style="color:#6b7280">Auto-updated on page load</small>
+  <!-- STATS (styled like screenshot) -->
+  <section class="section" style="padding:0">
+    <div class="stats-wrap">
+      <div class="stats-head">
+        <h2 class="stats-title">Our statistics across the board</h2>
+        <p class="stats-sub">We’re proud to showcase key numbers that reflect our reach, activity and partnerships across the Roblox aviation community.</p>
       </div>
-      <div class="board-grid">
-        <div class="tile"><div class="num" data-value="2023" data-pad="false">0</div><div class="lbl">Founded</div></div>
-        <div class="tile"><div class="num" data-static="Tyler Nicholas &amp; Kareem Malhas">Tyler Nicholas &amp; Kareem Malhas</div><div class="lbl">Founders</div></div>
-        <div class="tile"><div class="num" data-value="885" data-pad="false">0</div><div class="lbl">Total Members</div></div>
-        <div class="tile"><div class="num" data-value="4" data-pad="true">00</div><div class="lbl">Active Partnerships</div></div>
-        <div class="tile"><div class="num" data-value="900" data-pad="false">0</div><div class="lbl">Social Followers</div></div>
-        <div class="tile"><div class="num" data-static="N/A">N/A</div><div class="lbl">Monthly Visitors</div></div>
-      </div>
-    </div>
-  </section>
 
-  <!-- SUBSIDIARIES (glassy cards) -->
-  <div class="band-dark">
-    <section class="section reveal" id="subsidiaries">
-      <h2 class="h2">Our Subsidiaries &amp; Divisions</h2>
-    </section>
-
-    <div class="subs-tiles">
-      <!-- Emirates Airlines (Unified) -->
-      <div class="partner-card">
-        <div class="partner-body">
-          <div class="logo-wrap"><img src="/assets/logo-emirates-unified.png" alt="Emirates Airlines (Unified)"></div>
-          <div class="partner-title">Emirates Airlines (Unified)</div>
-          <p class="partner-sub">PTFS + RO-Av · One server</p>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon">
+            <!-- user icon -->
+            <svg viewBox="0 0 24 24" fill="#7fb0ff"><path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5Zm0 2c-4.42 0-8 2.24-8 5v1h16v-1c0-2.76-3.58-5-8-5Z"/></svg>
+          </div>
+          <div class="stat-num" data-value="885">0</div>
+          <div class="stat-name">Total Members</div>
+          <p class="stat-note">Across all subsidiaries and divisions</p>
         </div>
-        <div class="partner-footer">
+
+        <div class="stat-card">
+          <div class="stat-icon">
+            <!-- doc icon -->
+            <svg viewBox="0 0 24 24" fill="#7ff0a3"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Zm0 0v6h6"/></svg>
+          </div>
+          <div class="stat-num" data-value="4" data-pad="true">00</div>
+          <div class="stat-name">Active Partnerships</div>
+          <p class="stat-note">Official affiliates and alliances</p>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon">
+            <!-- clock -->
+            <svg viewBox="0 0 24 24" fill="#ffcf66"><path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Zm1 11h4v-2h-3V7h-2v6Z"/></svg>
+          </div>
+          <div class="stat-num" data-value="2023">0</div>
+          <div class="stat-name">Founded</div>
+          <p class="stat-note">Year the group was established</p>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon">
+            <!-- inbox -->
+            <svg viewBox="0 0 24 24" fill="#c39bff"><path d="M20 6H4a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h5a3 3 0 0 0 6 0h5a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2Zm0 8h-4a2 2 0 0 0-4 0H4V8h16Z"/></svg>
+          </div>
+          <div class="stat-num" data-static="N/A">N/A</div>
+          <div class="stat-name">Monthly Visitors</div>
+          <p class="stat-note">Website traffic (public)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBSIDIARIES band -->
+  <div class="band">
+    <h2 class="h2">Our Subsidiaries &amp; Divisions</h2>
+    <div class="subs">
+      <!-- Emirates Airlines (Unified) -->
+      <div class="partner">
+        <div class="body">
+          <div class="logo-tile"><img src="/assets/logo-emirates-unified.png" alt="Emirates Airlines (Unified)"></div>
+          <div class="title">Emirates Airlines (Unified)</div>
+          <p class="sub">PTFS + RO-Av · One server</p>
+        </div>
+        <div class="foot">
           <a class="icon-btn" href="https://discord.gg/RaudauJNn9" target="_blank" rel="noopener" aria-label="Discord">
             <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.2A17.4 17.4 0 0 0 15.9 3l-.2.3c2 .6 3 1.4 3 1.4-1.3-.6-2.5-.9-3.6-1-1.6-.2-3.2-.1-4.7.4-.4.1-.7.2-1 .3-.1 0-.2.1-.3.1l-.3.1s1-1 3.2-1.5l-.2-.3A17.3 17.3 0 0 0 3.7 4.2C1.4 7.7.8 11 .9 14.2c1.4 1.8 3.5 2.9 5.7 3-.7-.6-1.2-1.4-1.6-2.3.5.4 1 .7 1.6.9 3 1.3 6.4 1.3 9.4 0 .6-.2 1.1-.5 1.6-.9-.4.9-.9 1.7-1.6 2.3 2.3-.1 4.4-1.2 5.8-3 0-3.3-.6-6.5-2.1-10zM9.6 13.4c-.8 0-1.5-.7-1.5-1.5S8.8 10.4 9.6 10.4s1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm4.8 0c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5z"/></svg>
           </a>
@@ -139,13 +176,13 @@
       </div>
 
       <!-- Fly Dubai -->
-      <div class="partner-card">
-        <div class="partner-body">
-          <div class="logo-wrap"><img src="/assets/logo-flydubai.png" alt="Fly Dubai"></div>
-          <div class="partner-title">Fly Dubai</div>
-          <p class="partner-sub">RO-Av · Subsidiary</p>
+      <div class="partner">
+        <div class="body">
+          <div class="logo-tile"><img src="/assets/logo-flydubai.png" alt="Fly Dubai"></div>
+          <div class="title">Fly Dubai</div>
+          <p class="sub">RO-Av · Subsidiary</p>
         </div>
-        <div class="partner-footer">
+        <div class="foot">
           <a class="icon-btn" href="https://discord.gg/C59cqsrj9m" target="_blank" rel="noopener" aria-label="Discord">
             <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.2A17.4 17.4 0 0 0 15.9 3l-.2.3c2 .6 3 1.4 3 1.4-1.3-.6-2.5-.9-3.6-1-1.6-.2-3.2-.1-4.7.4-.4.1-.7.2-1 .3-.1 0-.2.1-.3.1l-.3.1s1-1 3.2-1.5l-.2-.3A17.3 17.3 0 0 0 3.7 4.2C1.4 7.7.8 11 .9 14.2c1.4 1.8 3.5 2.9 5.7 3-.7-.6-1.2-1.4-1.6-2.3.5.4 1 .7 1.6.9 3 1.3 6.4 1.3 9.4 0 .6-.2 1.1-.5 1.6-.9-.4.9-.9 1.7-1.6 2.3 2.3-.1 4.4-1.2 5.8-3 0-3.3-.6-6.5-2.1-10zM9.6 13.4c-.8 0-1.5-.7-1.5-1.5S8.8 10.4 9.6 10.4s1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm4.8 0c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5z"/></svg>
           </a>
@@ -159,13 +196,13 @@
       </div>
 
       <!-- EGR Aviation University -->
-      <div class="partner-card">
-        <div class="partner-body">
-          <div class="logo-wrap"><img src="/assets/logo-egu.png" alt="EGR Aviation University"></div>
-          <div class="partner-title">EGR Aviation University</div>
-          <p class="partner-sub">Training · Community</p>
+      <div class="partner">
+        <div class="body">
+          <div class="logo-tile"><img src="/assets/logo-egu.png" alt="EGR Aviation University"></div>
+          <div class="title">EGR Aviation University</div>
+          <p class="sub">Training · Community</p>
         </div>
-        <div class="partner-footer">
+        <div class="foot">
           <a class="icon-btn" href="https://discord.gg/y69xqUMpfE" target="_blank" rel="noopener" aria-label="Discord">
             <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.2A17.4 17.4 0 0 0 15.9 3l-.2.3c2 .6 3 1.4 3 1.4-1.3-.6-2.5-.9-3.6-1-1.6-.2-3.2-.1-4.7.4-.4.1-.7.2-1 .3-.1 0-.2.1-.3.1l-.3.1s1-1 3.2-1.5l-.2-.3A17.3 17.3 0 0 0 3.7 4.2C1.4 7.7.8 11 .9 14.2c1.4 1.8 3.5 2.9 5.7 3-.7-.6-1.2-1.4-1.6-2.3.5.4 1 .7 1.6.9 3 1.3 6.4 1.3 9.4 0 .6-.2 1.1-.5 1.6-.9-.4.9-.9 1.7-1.6 2.3 2.3-.1 4.4-1.2 5.8-3 0-3.3-.6-6.5-2.1-10zM9.6 13.4c-.8 0-1.5-.7-1.5-1.5S8.8 10.4 9.6 10.4s1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm4.8 0c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5z"/></svg>
           </a>
@@ -173,13 +210,13 @@
       </div>
 
       <!-- Falcon LTD -->
-      <div class="partner-card">
-        <div class="partner-body">
-          <div class="logo-wrap"><img src="/assets/logo-falcon.png" alt="Falcon LTD"></div>
-          <div class="partner-title">Falcon LTD</div>
-          <p class="partner-sub">Assets · Payhip Store</p>
+      <div class="partner">
+        <div class="body">
+          <div class="logo-tile"><img src="/assets/logo-falcon.png" alt="Falcon LTD"></div>
+          <div class="title">Falcon LTD</div>
+          <p class="sub">Assets · Payhip Store</p>
         </div>
-        <div class="partner-footer">
+        <div class="foot">
           <a class="icon-btn" href="https://discord.gg/fuePVPfPzF" target="_blank" rel="noopener" aria-label="Discord">
             <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M20.3 4.2A17.4 17.4 0 0 0 15.9 3l-.2.3c2 .6 3 1.4 3 1.4-1.3-.6-2.5-.9-3.6-1-1.6-.2-3.2-.1-4.7.4-.4.1-.7.2-1 .3-.1 0-.2.1-.3.1l-.3.1s1-1 3.2-1.5l-.2-.3A17.3 17.3 0 0 0 3.7 4.2C1.4 7.7.8 11 .9 14.2c1.4 1.8 3.5 2.9 5.7 3-.7-.6-1.2-1.4-1.6-2.3.5.4 1 .7 1.6.9 3 1.3 6.4 1.3 9.4 0 .6-.2 1.1-.5 1.6-.9-.4.9-.9 1.7-1.6 2.3 2.3-.1 4.4-1.2 5.8-3 0-3.3-.6-6.5-2.1-10zM9.6 13.4c-.8 0-1.5-.7-1.5-1.5S8.8 10.4 9.6 10.4s1.5.7 1.5 1.5-.7 1.5-1.5 1.5zm4.8 0c-.8 0-1.5-.7-1.5-1.5s.7-1.5 1.5-1.5 1.5.7 1.5 1.5-.7 1.5-1.5 1.5z"/></svg>
           </a>
@@ -191,52 +228,89 @@
     </div>
   </div>
 
-  <!-- NEWSLETTER -->
-  <section class="section reveal" id="newsletter">
-    <h2 class="h2">Subscribe to our newsletter</h2>
-    <p class="p" style="margin-bottom:12px">Stay connected and be the first to receive the latest news, updates, and announcements from Emirates Group Roblox — delivered straight to your inbox.</p>
-    <form class="form" action="mailto:news@emiratesgrouproblox.link" method="post" enctype="text/plain">
-      <div class="row" style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px">
-        <input class="input" name="First Name" placeholder="First Name" required>
-        <input class="input" name="Last Name" placeholder="Last Name" required>
-      </div>
-      <div class="row" style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:10px">
-        <input class="input" type="email" name="Email" placeholder="Email" required>
-        <button class="btn" style="background:#d71920;color:#fff;border-radius:10px" type="submit">Sign Up</button>
-      </div>
-    </form>
+  <!-- NEWSLETTER (footer-style card above footer) -->
+  <section class="newsletter">
+    <div class="news-card">
+      <h2 class="h2">Subscribe to our newsletter</h2>
+      <p class="p">Get the latest news, updates and event announcements from Emirates Group Roblox — straight to your inbox.</p>
+      <!-- Swap action to Formspree/other later if you want backend capture -->
+      <form action="mailto:news@emiratesgrouproblox.link" method="post" enctype="text/plain">
+        <div class="form-grid">
+          <input class="input" name="First Name" placeholder="First Name" required>
+          <input class="input" name="Last Name" placeholder="Last Name" required>
+          <input class="input" type="email" name="Email" placeholder="Email address" required>
+        </div>
+        <div style="display:flex;gap:10px;align-items:center;margin-top:10px">
+          <button class="btn red" type="submit">Sign Up</button>
+          <span class="note">By subscribing you agree to our <a href="/terms.html">Website Terms</a> and <a href="/privacy.html">Privacy Policy</a>.</span>
+        </div>
+      </form>
+    </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- FOOTER (multi-column) -->
   <footer class="footer">
-    <div class="row">
-      <div>© 2025 Emirates Group Roblox. All rights reserved.</div>
-      <div style="display:flex;gap:12px">
-        <span>Proud member of the <a href="https://discord.gg/c2kCQQK2rd" target="_blank" rel="noopener">Unity Aviation Alliance</a>.</span>
+    <div class="cols">
+      <div>
+        <h4>Customer Care</h4>
+        <a href="/support/index.html">Support Centre</a>
+        <a href="/more.html#faq">FAQ</a>
+        <a href="/more.html#contact">Contact Us</a>
+        <a href="/terms.html">Website Terms</a>
+        <a href="/privacy.html">Privacy Policy</a>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <a href="/careers.html">Careers</a>
+        <a href="/more.html#events">Events</a>
+        <a href="/more.html#partners">Affiliates</a>
+        <a href="/media.html">Media</a>
+      </div>
+      <div>
+        <h4>Corporate</h4>
+        <a href="/about.html">About Us</a>
+        <a href="/leadership.html">Our Leadership</a>
+        <a href="/more.html#governance">Governance</a>
+        <a href="/more.html#alliances">Alliances</a>
+      </div>
+      <div class="keep">
+        <h4>Keep in Touch</h4>
+        <form action="mailto:news@emiratesgrouproblox.link" method="post" enctype="text/plain">
+          <input type="email" name="Email" placeholder="Email address" required>
+          <button class="btn red" type="submit">Join</button>
+        </form>
+        <div style="margin-top:10px;display:flex;gap:10px;flex-wrap:wrap">
+          <a href="https://www.instagram.com/emiratesgroup.rbx" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://youtube.com/@emirates-group-roblox" target="_blank" rel="noopener">YouTube</a>
+          <a href="https://x.com/FlyEmiratesRBX" target="_blank" rel="noopener">X (Twitter)</a>
+        </div>
       </div>
     </div>
+    <div class="small">© 2025 Emirates Group Roblox. All rights reserved. A proud member of the Unity Aviation Alliance.</div>
   </footer>
 
-  <!-- JS: slideshow + reveal + stat counter -->
+  <!-- JS: slideshow + counters + dropdown -->
   <script>
-  // candidate slide filenames (we'll use whichever exist)
-  const slideCandidates=["/assets/hq.jpg","/assets/a359-1.jpg","/assets/a359-2.jpg","/assets/a359-3.jpg","/assets/a359-4.jpg","/assets/EGR%20Headquarters%20Pic.png","/assets/A359%20(1).png","/assets/A359%20(2).png","/assets/A359%20(3).png","/assets/A359%20(4).png"];
-  function preloadSlides(srcs){return Promise.all(srcs.map(src=>new Promise(res=>{const i=new Image();i.onload=()=>res(src);i.onerror=()=>res(null);i.src=src;}))).then(a=>a.filter(Boolean));}
-  document.addEventListener("DOMContentLoaded", async () => {
-    // slideshow
+  // slideshow uses any images that exist
+  const slidesSrc=["/assets/hq.jpg","/assets/a359-1.jpg","/assets/a359-2.jpg","/assets/a359-3.jpg","/assets/a359-4.jpg","/assets/EGR%20Headquarters%20Pic.png","/assets/A359%20(1).png","/assets/A359%20(2).png","/assets/A359%20(3).png","/assets/A359%20(4).png"];
+  function preload(srcs){return Promise.all(srcs.map(s=>new Promise(r=>{const i=new Image();i.onload=()=>r(s);i.onerror=()=>r(null);i.src=s;}))).then(a=>a.filter(Boolean));}
+  (async()=>{
     const hero=document.querySelector(".hero");
-    if(hero){
-      const slides=await preloadSlides(slideCandidates);
-      slides.forEach((src,i)=>{const d=document.createElement("div");d.className="slide"+(i===0?" active":"");d.style.backgroundImage=`url('${src}')`;hero.prepend(d);});
-      if(slides.length>1){let i=0;setInterval(()=>{const n=[...document.querySelectorAll(".slide")];n[i].classList.remove("active");i=(i+1)%n.length;n[i].classList.add("active")},5000);}
-    }
-    // reveal
-    const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("show");io.unobserve(e.target);}})},{threshold:.15});
-    document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
-    // stats counter
-    const counters=[...document.querySelectorAll(".num[data-value]")];
-    const animate=(el,start,end,dur,pad)=>{const t0=performance.now();const tick=(now)=>{const p=Math.min((now-t0)/dur,1);const val=Math.floor(start+(end-start)*p);el.textContent=pad?String(val).padStart(2,"0"):val;if(p<1)requestAnimationFrame(tick)};requestAnimationFrame(tick)};
-    counters.forEach(el=>{const end=parseInt(el.dataset.value||"0",10);const pad=el.dataset.pad==="true";animate(el,0,end,1200,pad);});
+    const ok=await preload(slidesSrc);
+    ok.forEach((src,i)=>{const d=document.createElement("div");d.className="slide"+(i===0?" active":"");d.style.backgroundImage=`url('${src}')`;hero.appendChild(d);});
+    if(ok.length>1){let i=0;setInterval(()=>{const n=[...document.querySelectorAll(".slide")];n[i].classList.remove("active");i=(i+1)%n.length;n[i].classList.add("active")},5000);}
+  })();
+
+  // stat counters
+  const nums=[...document.querySelectorAll(".stat-num[data-value]")];
+  function count(el,end,dur=1200,pad=false){const t0=performance.now();const step=(now)=>{const p=Math.min((now-t0)/dur,1);const v=Math.floor(end*p);el.textContent=pad?String(v).padStart(2,"0"):v;if(p<1)requestAnimationFrame(step)};requestAnimationFrame(step)}
+  nums.forEach(el=>count(el,parseInt(el.dataset.value||"0",10),1100,el.dataset.pad==="true"));
+
+  // dropdown : click outside to close
+  document.addEventListener('click',e=>{
+    const d=document.querySelector('.drop'); if(!d) return;
+    if(d.contains(e.target)){ if(e.target.tagName==='BUTTON') d.classList.toggle('open'); }
+    else d.classList.remove('open');
   });
   </script>
 </body>
